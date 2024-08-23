@@ -12,12 +12,24 @@
 **Пример**:
 - получение информации о пользователе - /users/{userId}  
 
-1. /projects
-2. /projects/{projectId} 
-	1. (создание проекта POST /projects)
-3. /projects/{projectId}/tasks
-4. /projects/{projectId}/tasks/{taskId} 
-	1. (создание задачи POST /projects/{projectId}/tasks)
+- для получения списка всех проектов
+``` JSON
+/projects
+```
+- для просмотра/создания/редактирования/удаления проекта
+``` JSON
+	/projects/{projectId} 
+	(создание проекта POST /projects)
+```
+- для получения списка задач в определённом проекте
+``` JSON
+	/projects/{projectId}/tasks
+```
+- для просмотра/создания/редактирования/удаления задачи в определённом проекте
+``` JSON
+	/projects/{projectId}/tasks/{taskId} 
+	(создание задачи POST /projects/{projectId}/tasks)
+```
 
 ## Задание: Проектирование методов
 
