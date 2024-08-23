@@ -48,10 +48,10 @@ GET /projects
 ```
 - Для просмотра, создания, редактирования, удаления проекта
 ``` JSON
-	GET /projects/{projectId}
-	POST /projects
-	PATCH /projects/{projectId}
-	DELETE /projects/{projectId}
+GET /projects/{projectId}
+POST /projects
+PATCH /projects/{projectId}
+DELETE /projects/{projectId}
 ```
 - Для получения списка задач в определённом проекте
 ``` JSON
