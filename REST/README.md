@@ -18,17 +18,17 @@
 ```
 - для просмотра/создания/редактирования/удаления проекта
 ``` JSON
-	/projects/{projectId} 
-	(создание проекта POST /projects)
+/projects/{projectId} 
+(создание проекта POST /projects)
 ```
 - для получения списка задач в определённом проекте
 ``` JSON
-	/projects/{projectId}/tasks
+/projects/{projectId}/tasks
 ```
 - для просмотра/создания/редактирования/удаления задачи в определённом проекте
 ``` JSON
-	/projects/{projectId}/tasks/{taskId} 
-	(создание задачи POST /projects/{projectId}/tasks)
+/projects/{projectId}/tasks/{taskId} 
+(создание задачи POST /projects/{projectId}/tasks)
 ```
 
 ## Задание: Проектирование методов
@@ -42,20 +42,28 @@
   
 В итоге должны получится методы и ендпоинты.
 
-1. Для получения списка всех проектов
-	1. GET /projects
-2. Для просмотра, создания, редактирования, удаления проекта
-	1. GET /projects/{projectId}
-	2. POST /projects
-	3. PATCH /projects/{projectId}
-	4. DELETE /projects/{projectId}
-3. Для получения списка задач в определённом проекте
-	1. GET /projects/{projectId}/tasks
-4. Для просмотра, создания, редактирования, удаления задачи в определённом проекте
-	1. GET /projects/{projectId}/tasks/{taskId}
-	2. POST /projects/{projectId}/tasks
-	3. PATCH /projects/{projectId}/tasks/{taskId}
-	4. DELETE /projects/{projectId}/tasks/{taskId}
+- Для получения списка всех проектов
+```JSON
+GET /projects
+```
+- Для просмотра, создания, редактирования, удаления проекта
+``` JSON
+	GET /projects/{projectId}
+	POST /projects
+	PATCH /projects/{projectId}
+	DELETE /projects/{projectId}
+```
+- Для получения списка задач в определённом проекте
+``` JSON
+GET /projects/{projectId}/tasks
+```
+- Для просмотра, создания, редактирования, удаления задачи в определённом проекте
+```JSON
+GET /projects/{projectId}/tasks/{taskId}
+POST /projects/{projectId}/tasks
+PATCH /projects/{projectId}/tasks/{taskId}
+DELETE /projects/{projectId}/tasks/{taskId}
+```
 
 ## Задание: проектирование endpoint + url + тело (при необходимости) для каждой функции
 
